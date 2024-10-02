@@ -11,9 +11,8 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   constructor(private router: Router){}
 
-  doLogin() { // Renomeando para doLogin()
+  onSubmit() {
     console.log('Login submitted');
-    // Aqui você pode adicionar a lógica de autenticação, se necessário
-    this.router.navigate(['/dashboard']); // Redireciona para o Dashboard
+    this.router.navigate(['/dashboard']);
   }
 }
